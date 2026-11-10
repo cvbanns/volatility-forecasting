@@ -1,0 +1,126 @@
+{
+  "protocol_commit": "bf378900abb6e297cfdd589a945657928a9cb9cd",
+  "config_sha256": "817ad87df9cc02b0a1a4b27ff969877e13303f97abdfb658a662573734233342",
+  "data_manifest_sha256": "99da28eb837f5339b557a97738cea4f674fd2c52b81f76cf99b4e18cdba6421e",
+  "development_log_sha256": "1d2dc4e95e41cedf4860ca030130b8beccedd44eff99b75f2f53f6ce5edf093f",
+  "forecast_winners": {
+    "1": "gjr_t",
+    "5": "gjr_t"
+  },
+  "selected_run": "vt_best_nolev",
+  "selected": {
+    "model": "gjr_t",
+    "target": 0.1,
+    "cap": 1.0,
+    "lag": 1,
+    "band": 0.05,
+    "weekly": false,
+    "cost": 0.0005,
+    "spread": 0.005
+  },
+  "holdout_rows": {
+    "bh": {},
+    "vt_hist21": {
+      "model": "hist21",
+      "target": 0.1,
+      "cap": 1.5,
+      "lag": 1,
+      "band": 0.05,
+      "weekly": false,
+      "cost": 0.0005,
+      "spread": 0.005
+    },
+    "vt_ewma": {
+      "model": "ewma",
+      "target": 0.1,
+      "cap": 1.5,
+      "lag": 1,
+      "band": 0.05,
+      "weekly": false,
+      "cost": 0.0005,
+      "spread": 0.005
+    },
+    "vt_best": {
+      "model": "gjr_t",
+      "target": 0.1,
+      "cap": 1.5,
+      "lag": 1,
+      "band": 0.05,
+      "weekly": false,
+      "cost": 0.0005,
+      "spread": 0.005
+    },
+    "vt_best_nolev": {
+      "model": "gjr_t",
+      "target": 0.1,
+      "cap": 1.0,
+      "lag": 1,
+      "band": 0.05,
+      "weekly": false,
+      "cost": 0.0005,
+      "spread": 0.005
+    },
+    "vt_best_tgt15": {
+      "model": "gjr_t",
+      "target": 0.15,
+      "cap": 1.5,
+      "lag": 1,
+      "band": 0.05,
+      "weekly": false,
+      "cost": 0.0005,
+      "spread": 0.005
+    },
+    "vt_best_weekly": {
+      "model": "gjr_t",
+      "target": 0.1,
+      "cap": 1.5,
+      "lag": 1,
+      "band": 0.05,
+      "weekly": true,
+      "cost": 0.0005,
+      "spread": 0.005
+    },
+    "vt_best_cost1": {
+      "model": "gjr_t",
+      "target": 0.1,
+      "cap": 1.5,
+      "lag": 1,
+      "band": 0.05,
+      "weekly": false,
+      "cost": 0.0001,
+      "spread": 0.005
+    },
+    "vt_best_cost10": {
+      "model": "gjr_t",
+      "target": 0.1,
+      "cap": 1.5,
+      "lag": 1,
+      "band": 0.05,
+      "weekly": false,
+      "cost": 0.001,
+      "spread": 0.005
+    },
+    "vt_best_sameclose": {
+      "model": "gjr_t",
+      "target": 0.1,
+      "cap": 1.5,
+      "lag": 0,
+      "band": 0.05,
+      "weekly": false,
+      "cost": 0.0005,
+      "spread": 0.005
+    }
+  },
+  "n_trials": 9,
+  "trial_sharpes": [
+    0.7088006155911679,
+    0.706553553337156,
+    0.6682853756519227,
+    0.7167864557989689,
+    0.7138889155124598,
+    0.6709910095017266,
+    0.7046701913273654,
+    0.6227899553294755,
+    0.7066362698094467
+  ]
+}
