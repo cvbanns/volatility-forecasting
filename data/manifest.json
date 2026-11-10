@@ -1,0 +1,80 @@
+{
+  "SPY": {
+    "file": "data/raw/SPY_20261110T065156Z.csv",
+    "downloaded_utc": "2026-11-10T06:51:56+00:00",
+    "sha256": "68b6185d9bc8b84b3c4c5b1634c010427644e1b5e79dc02f00a79439c103c395",
+    "source": "Yahoo Finance via yfinance"
+  },
+  "XLB": {
+    "file": "data/raw/XLB_20261110T065156Z.csv",
+    "downloaded_utc": "2026-11-10T06:51:56+00:00",
+    "sha256": "3f841e35138b97de62e8e6cdc1b73487236dd6f15e4573bbcb51bfac8a039a6e",
+    "source": "Yahoo Finance via yfinance"
+  },
+  "XLE": {
+    "file": "data/raw/XLE_20261110T065156Z.csv",
+    "downloaded_utc": "2026-11-10T06:51:56+00:00",
+    "sha256": "1762b3ab6607df0bbbc49c67376e1485d0aaa85289b19376bdd9ff4799e9c9f7",
+    "source": "Yahoo Finance via yfinance"
+  },
+  "XLF": {
+    "file": "data/raw/XLF_20261110T065156Z.csv",
+    "downloaded_utc": "2026-11-10T06:51:56+00:00",
+    "sha256": "12257bf7f81abe455219936fd64d9ea649c6c5cdd059416151c84ddf2c6f309e",
+    "source": "Yahoo Finance via yfinance"
+  },
+  "XLI": {
+    "file": "data/raw/XLI_20261110T065156Z.csv",
+    "downloaded_utc": "2026-11-10T06:51:56+00:00",
+    "sha256": "b037618c1ab37f8948fa2d79d38e7a418d19b9af312a69e193b4d2d0beb09709",
+    "source": "Yahoo Finance via yfinance"
+  },
+  "XLK": {
+    "file": "data/raw/XLK_20261110T065156Z.csv",
+    "downloaded_utc": "2026-11-10T06:51:56+00:00",
+    "sha256": "fa34952699fa83fd4aef2107ce5cfc98fc387e5aaf508725fdb902252c85da17",
+    "source": "Yahoo Finance via yfinance"
+  },
+  "XLP": {
+    "file": "data/raw/XLP_20261110T065156Z.csv",
+    "downloaded_utc": "2026-11-10T06:51:56+00:00",
+    "sha256": "e5ea7f13d26f1ca180813d1754d2c9c9b3843da6b0c8c1c6a0903fe44e61eabb",
+    "source": "Yahoo Finance via yfinance"
+  },
+  "XLU": {
+    "file": "data/raw/XLU_20261110T065156Z.csv",
+    "downloaded_utc": "2026-11-10T06:51:56+00:00",
+    "sha256": "eda635055de33791dd77411b7ce2a5e24abf297572d6adee821cd79cb37f963d",
+    "source": "Yahoo Finance via yfinance"
+  },
+  "XLV": {
+    "file": "data/raw/XLV_20261110T065156Z.csv",
+    "downloaded_utc": "2026-11-10T06:51:56+00:00",
+    "sha256": "e880ed14859d17ec279adee160137715a5b8ec82dc2086fba087b2ce00e06a97",
+    "source": "Yahoo Finance via yfinance"
+  },
+  "XLY": {
+    "file": "data/raw/XLY_20261110T065156Z.csv",
+    "downloaded_utc": "2026-11-10T06:51:56+00:00",
+    "sha256": "81bf7defefad3e576a117a80fb7bfa539e35326177d5476da9b19aeebd4f5633",
+    "source": "Yahoo Finance via yfinance"
+  },
+  "TLT": {
+    "file": "data/raw/TLT_20261110T065156Z.csv",
+    "downloaded_utc": "2026-11-10T06:51:56+00:00",
+    "sha256": "83297f2eea94fd04fc911373568f128fc14f4ac14e98e3d18a6477bf4175afd5",
+    "source": "Yahoo Finance via yfinance"
+  },
+  "GLD": {
+    "file": "data/raw/GLD_20261110T065156Z.csv",
+    "downloaded_utc": "2026-11-10T06:51:56+00:00",
+    "sha256": "050fc6d667a9b2df7ed38ff38beb8bf30e6012325811e47b56fe02668ab45d4d",
+    "source": "Yahoo Finance via yfinance"
+  },
+  "DTB3": {
+    "file": "data/raw/DTB3_20261110T065156Z.csv",
+    "downloaded_utc": "2026-11-10T06:51:56+00:00",
+    "sha256": "d340682767d85b652c33415fd4299726868abd23617442764aeed82219d50e22",
+    "source": "FRED via pandas-datareader"
+  }
+}
