@@ -1,0 +1,2 @@
+run,cagr,vol,sharpe,sortino,max_drawdown,calmar,avg_leverage,annual_turnover,total_cost,total_borrow_spread,target,vol_gap
+bh,0.12878714332123842,0.15801846208204146,0.8414697013769709,1.1879543071953258,-0.1860548397299916,0.6921999100272705,1.0,0.0,0.0,0.0,,

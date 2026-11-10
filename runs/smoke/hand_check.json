@@ -1,0 +1,12 @@
+{
+  "earning_date": "2010-01-05",
+  "forecast_target_and_trade_close": "2010-01-04",
+  "variance": 5.835615359664804e-05,
+  "previous_weight": 0.0,
+  "asset_return": 0.0026471255813450786,
+  "rf": 3.219025556111532e-06,
+  "expected_weight": 0.8246248161392093,
+  "expected_fee": 0.00041231240806960466,
+  "expected_spread": 0.0,
+  "expected_return": 0.001771137574943234
+}
