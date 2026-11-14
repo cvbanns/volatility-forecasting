@@ -2,7 +2,6 @@
 
 A reproducible Python study of whether better daily volatility forecasts improve a risk-targeted trading strategy after transaction costs. The project compares seven variance models on SPY, selects the model and trading rules on 2010–2015 data, then evaluates the frozen strategy on a 2016–2025 holdout and 11 additional ETFs.
 
-**Author:** Caleb Aregbesola
 
 ## Results
 
