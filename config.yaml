@@ -1,0 +1,28 @@
+{
+  "sample": ["2005-01-01", "2025-12-31"],
+  "burn_in": ["2005-01-01", "2009-12-31"],
+  "development": ["2010-01-01", "2015-12-31"],
+  "holdout": ["2016-01-01", "2025-12-31"],
+  "primary": "SPY",
+  "generalization": ["XLB","XLE","XLF","XLI","XLK","XLP","XLU","XLV","XLY","TLT","GLD"],
+  "models": ["hist21","ewma","garch_n","garch_t","gjr_t","egarch_t","har_rv"],
+  "rf_series": "DTB3",
+  "ewma_decay": 0.94,
+  "seed": 2026,
+  "block": 20,
+  "bootstrap_reps": 10000,
+  "egarch_paths": 1024,
+  "mcs_size": 0.10,
+  "canonical": {"target": 0.10,"cap": 1.5,"lag": 1,"band": 0.05,"weekly": false,"cost": 0.0005,"spread": 0.005},
+  "variants": {
+    "bh": {}, "vt_hist21": {"model":"hist21"}, "vt_ewma": {"model":"ewma"}, "vt_best": {},
+    "vt_best_nolev": {"cap":1.0}, "vt_best_tgt15": {"target":0.15},
+    "vt_best_weekly": {"weekly":true}, "vt_best_cost1": {"cost":0.0001},
+    "vt_best_cost10": {"cost":0.001}, "vt_best_sameclose": {"lag":0}
+  },
+  "selection": {
+    "eligible": ["vt_hist21","vt_ewma","vt_best","vt_best_nolev","vt_best_tgt15","vt_best_weekly"],
+    "max_vol_gap": 0.02,
+    "rule": "Minimize one-day QLIKE for Part A. For Part B choose the highest Sharpe within 2 percentage points of its own target; if none qualify choose smallest absolute gap then highest Sharpe. Break ties by declared order."
+  }
+}
