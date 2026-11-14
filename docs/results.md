@@ -122,7 +122,7 @@ The same selected rules were applied to each asset over 2016–2025. Each model 
 - Cash accrues the latest strictly prior DTB3 quote converted to an effective daily rate using a 91-day bill. Borrowing adds 50 bps annualized. CAGR, vol. and Sharpe annualize at 252 trading days; Sortino uses downside deviations from the T-bill rate. Cost and spread totals are dollars per dollar of starting wealth. Drawdowns include the starting NAV.
 - MZ and DM use Newey–West errors. The MCS uses the range statistic and a stationary bootstrap. Sharpe differences use 10,000 paired stationary resamples (mean block length 20 days, seed 2026); the ex-post benchmark weight stays fixed during resampling.
 
-Follow the [reproduction guide](../README.md#quick-start) from the eproduction-base tag. The original commits named above are preserved on the study-audit branch.
+Follow the [reproduction guide](../README.md#quick-start) from the `reproduction-base` tag. The original commits named above are preserved on the `study-audit` branch.
 
 Implementation references: [arch forecast methods](https://arch.readthedocs.io/en/stable/univariate/forecasting.html), [FRED DTB3](https://fred.stlouisfed.org/series/DTB3), [Deflated Sharpe paper](https://www.davidhbailey.com/dhbpapers/deflated-sharpe.pdf). The research bibliography is in the protocol.
 
