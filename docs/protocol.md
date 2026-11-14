@@ -96,8 +96,6 @@ def walk_forward_garch(r, start, vol="GARCH", o=0, dist="t"):
     return pd.Series(out, name=f"{vol.lower()}_{dist}")
 ```
 
-This is the clear version, not the fast one. Once it is verified on a few months, it can be sped up by running the variance recursion directly with the frozen parameters.
-
 ---
 
 ## 3. Part B: volatility-targeted strategy
@@ -124,7 +122,6 @@ sigma_hat_{t+1} = sqrt(252 * h_{t+1})          # annualized forecast volatility
 R_{t} = w_t * r_t + (1 - w_t) * rf_t - spread * max(w_t - 1, 0) - c * |w_t - w_{t-1}|
 ```
 
-Use simple returns, not log returns, when compounding portfolio wealth.
 
 **Benchmarks:**
 
@@ -218,23 +215,3 @@ vol-forecasting-trading/
 - **README results tables:** Part A (QLIKE and MSE per model, development and holdout, MCS membership); Part B (metrics per row, holdout); Sharpe-difference confidence intervals; deflated Sharpe; generalization table.
 
 ---
-
-## 8. Writing it up afterwards
-
-Only after the holdout is run, fill a resume bullet from the actual numbers. Template, with placeholders:
-
-> Built a walk-forward volatility forecasting and volatility-targeting study on SPY (2005–2025) comparing seven models (EWMA, GARCH family, HAR-RV) on QLIKE with Diebold–Mariano tests; on a 2016–2025 holdout touched once, the selected strategy [ran at X% realized volatility against a 10% target, cut maximum drawdown from Y% to Z%, and changed Sharpe by W (95% CI ...)] after 5 bps costs.
-
-If the improved forecast does **not** beat `hist21` after costs, say so. It is still a credible result and an excellent interview story.
-
-## References
-
-- Bailey, D. H., and López de Prado, M. (2014). The deflated Sharpe ratio. *Journal of Portfolio Management*, 40(5).
-- Bollerslev, T. (1986). Generalized autoregressive conditional heteroskedasticity. *Journal of Econometrics*, 31(3).
-- Corsi, F. (2009). A simple approximate long-memory model of realized volatility. *Journal of Financial Econometrics*, 7(2).
-- Glosten, L. R., Jagannathan, R., and Runkle, D. E. (1993). On the relation between the expected value and the volatility of the nominal excess return on stocks. *Journal of Finance*, 48(5).
-- Hansen, P. R., Lunde, A., and Nason, J. M. (2011). The model confidence set. *Econometrica*, 79(2).
-- Harvey, C. R., Hoyle, E., Korgaonkar, R., Rattray, S., Sargaison, M., and Van Hemert, O. (2018). The impact of volatility targeting. *Journal of Portfolio Management*, 45(1).
-- Moreira, A., and Muir, T. (2017). Volatility-managed portfolios. *Journal of Finance*, 72(4).
-- Patton, A. J. (2011). Volatility forecast comparison using imperfect volatility proxies. *Journal of Econometrics*, 160(1).
-- Politis, D. N., and Romano, J. P. (1994). The stationary bootstrap. *Journal of the American Statistical Association*, 89(428).
